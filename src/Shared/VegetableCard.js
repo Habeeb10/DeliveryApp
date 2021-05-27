@@ -18,7 +18,7 @@ import { CheckIcon } from "../../assets/svg";
       },
     container: {
         backgroundColor: "#E2CBFF",
-        height: 34,
+        height: 20,
         justifyContent:"center",
         alignItems:"center"
       },
@@ -29,13 +29,13 @@ import { CheckIcon } from "../../assets/svg";
        alignItems:"center",
        backgroundColor:"white",
        marginTop:10,
-       height:30,
+       height:20,
        justifyContent:"center",
       },
 
     title:{
         color:"#9586A8",
-        fontSize:11,
+        fontSize:13,
       },
   });
   

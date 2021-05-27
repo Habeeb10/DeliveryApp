@@ -24,6 +24,7 @@ export const Header = ({ title, icon, style, onPress }) => {
       fontSize: 35,
       lineHeight:41,
       marginTop:20,
+      fontWeight:"700"
     },
   });
   

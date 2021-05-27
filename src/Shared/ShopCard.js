@@ -15,8 +15,8 @@ import { CartIcon, VectorIcon } from "../../assets/svg";
           <Text style={styles.piece}>{piece}</Text>
           </View>
           <View style={styles.iconbox}>
-          <TouchableOpacity style={styles.Vectoricon} ><VectorIcon/></TouchableOpacity>
-          <TouchableOpacity style={styles.carticon}><CartIcon/></TouchableOpacity>
+          <TouchableOpacity style={styles.vec}><VectorIcon/></TouchableOpacity>
+          <TouchableOpacity style={styles.cart}><CartIcon/></TouchableOpacity>
           </View>
           </View>
       </View> 
@@ -25,12 +25,14 @@ import { CartIcon, VectorIcon } from "../../assets/svg";
   };
   const styles = StyleSheet.create({
     pricebox:{
-        flexDirection:"row"
+        flexDirection:"row",
+        alignItems:"center",
+        // justifyContent:"center"
     },  
     iconbox:{
       flexDirection:"row"
     },
-    carticon:{
+    cart:{
       backgroundColor:"#0BCE83",
       height:40,
       width:70,
@@ -40,7 +42,7 @@ import { CartIcon, VectorIcon } from "../../assets/svg";
       borderRadius:8,
       marginLeft:10
     },
-    Vectoricon:{
+    vec:{
       backgroundColor:"#FFFFFF",
       marginLeft:15, 
       height:40,
@@ -63,7 +65,7 @@ import { CartIcon, VectorIcon } from "../../assets/svg";
       },
     image: {
         width: 160,
-        height: 150,
+        height: 140,
         borderRadius:8
       },
       label:{

@@ -172,7 +172,7 @@ const styles = StyleSheet.create({
     lineHeight:36,
  },
     image:{
-    height:270,
+    height:265,
     resizeMode:"contain",
  
 

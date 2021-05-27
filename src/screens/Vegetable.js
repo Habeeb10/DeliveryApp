@@ -112,7 +112,7 @@ export default function Vegetable({ navigation }) {
       justifyContent:"space-between",
       width:"100%",
       paddingHorizontal:20,
-      marginTop:20
+      marginTop:25
 
     },
     flower:{

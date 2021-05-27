@@ -16,7 +16,6 @@
 //       <Stack.Screen name="items" component={Items} />
 //       <Stack.Screen name="checkout" component={Checkout} />
 //       <Stack.Screen name="payment" component={Payment} />
-      
 //     </Stack.Navigator>
 //   );
 // }

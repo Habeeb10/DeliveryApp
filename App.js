@@ -8,9 +8,9 @@ import MyTabs from "./src/Navigator/TabNavigator";
 
 export default function App() {
   return (
-    <NavigationContainer>
+   
     <MyTabs/>
-    </NavigationContainer>    
+    
     
   );
 }

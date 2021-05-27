@@ -52,19 +52,20 @@ const Vegetablecard = [
 ]
 
 export default function Vegetable({ navigation }) {
-    const [active, setActive] = useState("Сabbage and lettuce (14)");
+    const [active, setActive] = useState("Сabbage and lettuce");
 
     return (
     <View style={styles.container}>
         <ScrollView showsVerticalScrollIndicator={false} >
         <StatusBar style="dark" />
-        <View style={{flexDirection:"row", justifyContent:"space-between", marginTop:20}}>
+        <View style={styles.headbox}>
         <Header  style={styles.header}
           title="Vegetable"
-          icon={<BackIcon/>}
-          onPress={()=>navigation.navigate("categories")} 
+          onPress={()=>navigation.navigate("items")} 
+          icon={<BackIcon onPress={()=>navigation.navigate("categories")} />}
+          
           />
-          <Image source={Images.Flower} style={{ height:150, width:200, resizeMode:"contain", marginLeft:40}}/>
+          <Image source={Images.Flower} style={styles.flower}/>
         </View>
           <View style={styles.searchbox}>
            <SearchInput
@@ -72,7 +73,7 @@ export default function Vegetable({ navigation }) {
            placeHolder="Search"
            />
           </View>   
-       <View  style={styles.box}>
+       <View  style={styles.cabbagebox}>
          {Vegetablecard.map((item, index) => {
           return (
             <VegCard
@@ -85,7 +86,7 @@ export default function Vegetable({ navigation }) {
            );
           })}
           </View> 
-          <View style={styles.box}> 
+          <View style={styles.bostonbox}> 
            {Vegetablecard.map((item, index) => {
             return (
             <ShopCard
@@ -93,9 +94,8 @@ export default function Vegetable({ navigation }) {
               icon={item.icon}
               label={item.label}
               price={item.price}
-              piece={item.piece}
-              vectoricon={item.vectoricon}
-              carticon={item.carticon}            
+              piece={item.piece} 
+                   
             />
             );
             })}
@@ -106,21 +106,44 @@ export default function Vegetable({ navigation }) {
   }
 
   const styles = StyleSheet.create({
-    box:{
-        marginTop: 20,
+
+    headbox:{
+      flexDirection:"row", 
+      justifyContent:"space-between",
+      width:"100%",
+      paddingHorizontal:20,
+      marginTop:20
+
+    },
+    flower:{
+      height:160, 
+      width:230,
+      // marginLeft:10,
+      resizeMode:"contain"
+    
+    },
+    cabbagebox:{
+      marginTop: 10,
         flexWrap:"wrap",
         flexDirection:"row",
         justifyContent:"space-between",
         alignItems:"center",
-        width:"100%",
-        height:100
+        marginBottom:20,
+        paddingHorizontal:15,
+      
+    },
+    bostonbox:{
+        marginTop: 20,
+        paddingHorizontal:20
       },
     searchbox:{
       flexDirection:"row",
+      width:"100%",
+      paddingHorizontal:20,
     },  
     container: {
       flex: 1,
-      padding: 20,
+      // padding: 20,
       backgroundColor:"#F6F5F5",
     },
   });

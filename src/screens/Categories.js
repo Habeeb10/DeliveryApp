@@ -8,6 +8,7 @@ import {SearchInput} from "../components/SeachInput";
 import { CategoriesCard } from "../Shared/CategoriesCard";
 import * as Images from "../../assets/images";
 import Vegetable from "./Vegetable";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 
 const BEVERAGES = [

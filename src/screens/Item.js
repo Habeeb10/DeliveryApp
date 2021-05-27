@@ -71,6 +71,8 @@ export default function Items({navigation}) {
          data={slides}
          dotStyle={{ backgroundColor: "grey", width:20, borderRadius:20,  height:20,  }}
          activeDotStyle={{ backgroundColor: "white", width:20, borderRadius:20, height:20  }}
+         showNextButton={false}
+         showDoneButton={false}
        />
        <View style={styles.cartvectorbox}>
        <TouchableOpacity style={styles.vectorbox}

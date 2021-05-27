@@ -7,9 +7,9 @@ export const Header = ({ title, icon, style, onPress }) => {
         <TouchableOpacity onPress={onPress}>
         {icon} 
         </TouchableOpacity>
-        <TouchableOpacity onPress={onPress}>
+        <View>
           <Text style={styles.title} >{title}</Text>
-          </TouchableOpacity>  
+          </View>  
 
         
       </View>

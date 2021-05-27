@@ -146,3 +146,39 @@ export function Symbol(props){
 
     )
 }
+export function Grid(props){
+    return(
+        <Svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+        {...props}>
+        <Path d="M10 21H3V14H10V21Z" fill="#9586A8" fill-opacity="0.5" stroke={props.color||"#9586A8"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <Path d="M21 21H14V14H21V21Z" fill="#9586A8" fill-opacity="0.5" stroke={props.color||"#9586A8"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <Path d="M21 10H14V3H21V10Z" fill="#9586A8" fill-opacity="0.5" stroke={props.color||"#9586A8"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <Path d="M10 10H3V3H10V10Z" fill="#9586A8" fill-opacity="0.5" stroke={props.color||"#9586A8"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </Svg>
+
+    )
+}
+
+export function Shoppingcart(props){
+    return(
+        <Svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+        {...props}>
+        <Path d="M5.14282 5H22.2857L20.5714 15.2857H6.85711L5.14282 5Z" stroke={props.color||"#9586A8"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <Path d="M8.57132 20.9999C9.20251 20.9999 9.71418 20.4883 9.71418 19.8571C9.71418 19.2259 9.20251 18.7142 8.57132 18.7142C7.94014 18.7142 7.42847 19.2259 7.42847 19.8571C7.42847 20.4883 7.94014 20.9999 8.57132 20.9999Z" stroke="#9586A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <Path d="M18.8572 20.9999C19.4884 20.9999 20.0001 20.4883 20.0001 19.8571C20.0001 19.2259 19.4884 18.7142 18.8572 18.7142C18.226 18.7142 17.7144 19.2259 17.7144 19.8571C17.7144 20.4883 18.226 20.9999 18.8572 20.9999Z" stroke="#9586A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <Path d="M5.14293 5H1.71436" stroke={props.color||"#9586A8"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </Svg>
+
+    )
+}
+
+export function User(props){
+    return(
+        <Svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+        {...props}>
+        <Path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="#9586A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <Path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke={props.color||"#9586A8"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </Svg>
+
+    )
+}

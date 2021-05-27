@@ -11,46 +11,52 @@ import { ShopCard } from "../Shared/ShopCard";
 
 
 const Vegetablecard = [
-      { 
-        title: "Сabbage and lettuce",
-        label: "Boston Lettuce",
-        price: 1.1,
-        icon: Images.Lettuce,
-        cart: <CartIcon/>,
-        vector: <VectorIcon/>,
-        piece: "€ / piece",
-        total: 14,
-      },
-      {
-        title: "Сucumbers and tomatoes",
-        label: "Purple Cauliflower",
-        price: 1.85,
-        icon: Images.Caurliflower,
-        cart: <CartIcon/>,
-        vector: <VectorIcon/>,
-        piece: "€ / kg",
-        total:10,
-      },
-      {
-        title: "Oinons and garlic",
-        label: "Savoy Cabbage",
-        price: 1.45,
-        icon: Images.Cabbage,
-        carticon: <CartIcon/>,
-        vectoricon: <VectorIcon/>,
-        piece: "€ / kg",
-        total:8
-      },
-      {
-        title: "Peppers",
-        total: 17
-      },
-      {
-         title: "Potatoes and carrots",
-         total:4
-      }
-]
+    {
+    title: "Сabbage and lettuce",
+    total: 14
+   },
+   {
+    title: "Сucumbers and tomatoes",
+    total:10,
+   },
+   {
+    title: "Oinons and garlic",
+    total:8
+   },
+   {
+    title: "Potatoes and carrots",
+    total:4
+   },
+   {
+    title: "Peppers",
+    total: 17
+   },
+  ]
 
+
+const Shopcard = [
+  { 
+    label: "Boston Lettuce",
+    price: 1.1,
+    icon: Images.Lettuce,
+    piece: "€ / piece",
+  },
+  {
+    label: "Purple Cauliflower",
+    price: 1.85,
+    icon: Images.Caurliflower,
+    piece: "€ / kg",
+    
+  },
+  { 
+    label: "Savoy Cabbage",
+    price: 1.45,
+    icon: Images.Cabbage,
+    piece: "€ / kg",
+    
+  },
+]
+     
 export default function Vegetable({ navigation }) {
     const [active, setActive] = useState("Сabbage and lettuce");
 
@@ -61,7 +67,6 @@ export default function Vegetable({ navigation }) {
         <View style={styles.headbox}>
         <Header  style={styles.header}
           title="Vegetable"
-          onPress={()=>navigation.navigate("items")} 
           icon={<BackIcon onPress={()=>navigation.navigate("categories")} />}
           
           />
@@ -87,7 +92,7 @@ export default function Vegetable({ navigation }) {
           })}
           </View> 
           <View style={styles.bostonbox}> 
-           {Vegetablecard.map((item, index) => {
+           {Shopcard.map((item, index) => {
             return (
             <ShopCard
               key={index}
@@ -95,6 +100,7 @@ export default function Vegetable({ navigation }) {
               label={item.label}
               price={item.price}
               piece={item.piece} 
+              onPress={()=>navigation.navigate("items")}
                    
             />
             );

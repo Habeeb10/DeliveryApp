@@ -68,7 +68,8 @@ export default function Categories({ navigation }) {
               key={index}
               icon={item.icon}
               title={item.title}
-              numbers={item.numbers }
+              numbers={item.numbers}
+              onPress={()=>navigation.navigate("vegetable")}
             />
           );
         })}

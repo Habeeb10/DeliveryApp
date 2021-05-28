@@ -1,5 +1,5 @@
 import React from "react";
-import { View, TextInput, StyleSheet, Text } from "react-native";
+import { View, TextInput, StyleSheet } from "react-native";
 export const SearchInput = ({ placeHolder, style, icon, inputStyle }) => {
   return (
     <View style={[styles.container, style]}>

@@ -1,6 +1,6 @@
 import "react-native-gesture-handler";
 import React from "react";
-import { StyleSheet, Switch, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, Switch, Text, View } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import {
   BackIcon,

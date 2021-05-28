@@ -1,6 +1,6 @@
 import "react-native-gesture-handler";
 import React from "react";
-import { Image, ImageBackground, StyleSheet, Text, View } from "react-native";
+import { Image, ImageBackground, Text, View } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import * as Images from "../../assets/images";
 import AppIntroSlider from "react-native-app-intro-slider";

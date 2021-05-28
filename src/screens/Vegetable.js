@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { Header } from "../components/header/Header";
-import SearchIcon, { BackIcon, CartIcon, VectorIcon } from "../../assets/svg";
+import SearchIcon, { BackIcon } from "../../assets/svg";
 import { SearchInput } from "../components/SeachInput";
 import { VegCard } from "../Shared/VegetableCard";
 import * as Images from "../../assets/images";

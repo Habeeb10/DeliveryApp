@@ -3,7 +3,7 @@ import React from "react";
 import { Text, View, StyleSheet } from "react-native";
 import { StatusBar } from "expo-status-bar";
 
-export default function Profile({ navigation }) {
+export default function Profile() {
   return (
     <View style={styles.container}>
       <StatusBar style="dark" />

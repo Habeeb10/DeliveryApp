@@ -8,4 +8,4 @@ export const Flower = require("./Flower.png");
 export const Lettuce = require("./Lettuce.png");
 export const Cabbage = require("./Cabbage.png");
 export const Caurliflower = require("./Caurliflower.png");
-export const Card = require("./Card.png")
+export const Card = require("./Card.png");

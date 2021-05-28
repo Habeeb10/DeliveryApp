@@ -22,8 +22,6 @@ function CategoriesStackScreen() {
   );
 }
 
-
-
 export default function MyTabs() {
   return (
     <NavigationContainer>

@@ -14,7 +14,6 @@ export const CategoriesStyles = StyleSheet.create({
     flexDirection: "row",
     marginTop: 30,
   },
-
   container: {
     flex: 1,
     padding: 20,
@@ -37,12 +36,12 @@ export const VegetableStyles = StyleSheet.create({
     resizeMode: "contain",
   },
   cabbagebox: {
+    flexDirection: "row",
+    height: 65,
+    borderRadius: 10,
+    width: "100%",
     marginTop: 10,
     flexWrap: "wrap",
-    flexDirection: "row",
-    width: "100%",
-
-    marginBottom: 20,
     paddingHorizontal: 15,
   },
   bostonbox: {

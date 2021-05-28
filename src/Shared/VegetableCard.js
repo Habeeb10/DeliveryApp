@@ -27,7 +27,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-
   card: {
     flexDirection: "row",
     borderRadius: 20,
@@ -38,7 +37,6 @@ const styles = StyleSheet.create({
     width: 200,
     justifyContent: "center",
   },
-
   title: {
     color: "#9586A8",
     fontSize: 13,

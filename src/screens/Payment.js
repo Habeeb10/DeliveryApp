@@ -2,10 +2,11 @@ import "react-native-gesture-handler";
 import React from "react";
 import { Image, Text, View, TouchableOpacity } from "react-native";
 import { StatusBar } from "expo-status-bar";
-import { BackIcon, PhotoIcon } from "../../assets/svg";
+import { BackIcon, CardIcon, PhotoIcon, Symbol } from "../../assets/svg";
 import * as Images from "../../assets/images";
 import { Input } from "../components/Input";
 import { PaymentStyles as styles } from "./Styles";
+import { CardInput } from "../components/CardInput";
 
 export default function Payment({ navigation }) {
   return (
@@ -21,14 +22,26 @@ export default function Payment({ navigation }) {
       <Image style={styles.card} source={Images.Card} />
       <PhotoIcon style={{ alignSelf: "center", marginTop: 5 }} />
       <Input label="Name on card" placeHolder="Alexandra Smith" />
-      <Input label="Card number" placeHolder="4747  4747  4747  4747" />
-      <View style={{ flexDirection: "row" }}>
+      <View style={styles.cardbox}>
         <Input
+          label="Card number"
+          placeHolder="4747  4747  4747  4747"
+          icon={<Symbol />}
+        />
+      </View>
+
+      <View style={{ flexDirection: "row" }}>
+        <CardInput
           label="Expiry date"
           placeHolder="07/21"
           inputStyle={styles.expirybox}
         />
-        <Input label="CVC" placeHolder="474" inputStyle={styles.expirybox} />
+        <CardInput
+          label="CVC"
+          icon={<CardIcon />}
+          placeHolder="474"
+          inputStyle={styles.expirybox}
+        />
       </View>
       <TouchableOpacity style={styles.usebox}>
         <Text style={{ color: "white", fontSize: 15, fontWeight: "600" }}>

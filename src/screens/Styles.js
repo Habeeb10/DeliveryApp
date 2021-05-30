@@ -32,17 +32,13 @@ export const VegetableStyles = StyleSheet.create({
   flower: {
     height: 160,
     width: 230,
-    // marginLeft:10,
     resizeMode: "contain",
   },
   cabbagebox: {
     flexDirection: "row",
-    height: 65,
-    borderRadius: 10,
-    width: "100%",
-    marginTop: 10,
     flexWrap: "wrap",
-    paddingHorizontal: 15,
+    paddingHorizontal: 20,
+    marginTop: 30,
   },
   bostonbox: {
     marginTop: 20,
@@ -55,7 +51,6 @@ export const VegetableStyles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    // padding: 20,
     backgroundColor: "#F6F5F5",
   },
 });
@@ -245,26 +240,18 @@ export const PaymentStyles = StyleSheet.create({
     marginLeft: 20,
     marginTop: 10,
   },
-  expirybox: {
-    fontSize: 17,
-    lineHeight: 22,
-    fontWeight: "400",
-    height: 48,
-    width: 165,
-  },
+
   card: {
     width: 374,
     height: 250,
     resizeMode: "cover",
     marginLeft: 5,
-    // marginTop:10
   },
   credit: {
     fontSize: 30,
     fontWeight: "700",
     lineHeight: 41,
     color: "#2D0C57",
-    // marginTop:10,
     paddingHorizontal: 25,
   },
   headbox: {

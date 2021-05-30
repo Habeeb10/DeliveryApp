@@ -2,7 +2,7 @@ import React from "react";
 import { View, TextInput, StyleSheet, Text } from "react-native";
 import { HintIcon, Symbol } from "../../assets/svg";
 
-export const Input = ({
+export const CardInput = ({
   placeHolder,
   style,
   type,
@@ -33,20 +33,20 @@ export const Input = ({
 };
 const styles = StyleSheet.create({
   cont: {
-    width: "85%",
+    width: 150,
     color: "#2D0C57",
     fontSize: 15,
     height: 45,
-    justifyContent: "space-between",
     backgroundColor: "white",
     borderRadius: 8,
-    marginLeft: 20,
+    marginLeft: 25,
     borderWidth: 1,
     borderColor: "#D9D0E3",
     marginBottom: 10,
     flexDirection: "row",
     alignItems: "center",
     paddingHorizontal: 10,
+    justifyContent: "space-between",
   },
   container: {
     marginTop: 10,

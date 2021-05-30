@@ -143,27 +143,29 @@ export function HomeIcon(props) {
 
 export function CardIcon(props) {
   return (
-    <Svg
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+    <Svg width="39" height="29" viewBox="0 0 39 29" fill="none" {...props}>
       <Path
-        d="M21 4H3C1.89543 4 1 4.89543 1 6V18C1 19.1046 1.89543 20 3 20H21C22.1046 20 23 19.1046 23 18V6C23 4.89543 22.1046 4 21 4Z"
-        stroke="#2D0C57"
-        stroke-width="1.5"
+        d="M34.3939 1.66675H4.93935C3.13188 1.66675 1.66663 3.12182 1.66663 4.91675V24.4167C1.66663 26.2117 3.13188 27.6667 4.93935 27.6667H34.3939C36.2014 27.6667 37.6666 26.2117 37.6666 24.4167V4.91675C37.6666 3.12182 36.2014 1.66675 34.3939 1.66675Z"
+        stroke="#D9D0E3"
+        stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
       <Path
-        d="M1 10H23"
-        stroke="#2D0C57"
-        stroke-width="1.5"
+        d="M1.66663 8.66663H37.6666"
+        stroke="#D9D0E3"
+        stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
+      />
+      <Rect
+        x="17"
+        y="13"
+        width="14"
+        height="6"
+        rx="2"
+        stroke="#F24E1E"
+        stroke-width="2"
       />
     </Svg>
   );

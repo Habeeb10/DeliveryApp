@@ -2,6 +2,7 @@ import "react-native-gesture-handler";
 import React from "react";
 import { Text, View, StyleSheet } from "react-native";
 import { StatusBar } from "expo-status-bar";
+import { ProfileStyles as styles } from "./Styles";
 
 export default function Profile() {
   return (
@@ -11,10 +12,3 @@ export default function Profile() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  Profile: {
-    textAlign: "center",
-    marginTop: 200,
-  },
-});

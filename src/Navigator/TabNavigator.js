@@ -1,14 +1,14 @@
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import Vegetable from "../screens/Vegetable";
-import Categories from "../screens/Categories";
-import Items from "../screens/Item";
+import Vegetable from "../screens/vegetable/Vegetable";
+import Categories from "../screens/categories/Categories";
+import Items from "../screens/item/Item";
 import Profile from "../screens/Profile";
-import Checkout from "../screens/Checkout";
+import Checkout from "../screens/checkout/Checkout";
 import { Grid, Shoppingcart, User } from "../../assets/svg";
 import { createStackNavigator } from "@react-navigation/stack";
-import Payment from "../screens/Payment";
+import Payment from "../screens/checkout/Payment";
 
 const Tab = createBottomTabNavigator();
 const CategoriesStack = createStackNavigator();

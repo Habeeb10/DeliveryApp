@@ -2,7 +2,7 @@ import "react-native-gesture-handler";
 import React from "react";
 import { Text, View, StyleSheet } from "react-native";
 import { StatusBar } from "expo-status-bar";
-import { ProfileStyles as styles } from "./Styles";
+import { ProfileStyles as styles } from "./ProfileStyles";
 
 export default function Profile() {
   return (

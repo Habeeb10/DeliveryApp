@@ -7,12 +7,14 @@ import { TouchableOpacity } from "react-native-gesture-handler";
 import { ItemStyles as styles } from "../item/ItemStyles";
 
 export default function Items({ navigation, route }) {
-  const { label, price, piece } = route.params;
+  const { details } = route.params;
+  const { price, label, piece } = details;
   const icon = getImage(label);
   return (
     <View style={styles.container}>
       <StatusBar style={"light"} />
-      {icon}
+      <Image source={icon} style={styles.image} />
+
       <Text style={styles.label}>{label}</Text>
       <View style={styles.piecebox}>
         <Text style={styles.price}>{price}</Text>
@@ -49,27 +51,13 @@ export default function Items({ navigation, route }) {
 const getImage = (label) => {
   switch (label) {
     case "Boston Lettuce":
-      return (
-        <Image
-          source={require("../../../assets/images/Lettuce.png")}
-          style={styles.image}
-        />
-      );
+      return require("../../../assets/images/Lettuce.png");
 
     case "Purple Cauliflower":
-      return (
-        <Image
-          source={require("../../../assets/images/Caurliflower.png")}
-          style={styles.image}
-        />
-      );
+      return require("../../../assets/images/Caurliflower.png");
+
     case "Savoy Cabbage":
-      return (
-        <Image
-          source={require("../../../assets/images/Cabbage.png")}
-          style={styles.image}
-        />
-      );
+      return require("../../../assets/images/Cabbage.png");
 
     default:
       return null;

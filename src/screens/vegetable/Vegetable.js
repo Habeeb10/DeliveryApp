@@ -58,7 +58,7 @@ const Shopcard = [
 export default function Vegetable({ navigation, route }) {
   const [active, setActive] = useState("Сabbage and lettuce");
   const { title } = route.params;
-  const food = getTitle(title);
+
   return (
     <View style={styles.container}>
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -66,7 +66,7 @@ export default function Vegetable({ navigation, route }) {
         <View style={styles.headbox}>
           <Header
             style={styles.header}
-            title={food}
+            title={title}
             icon={
               <BackIcon onPress={() => navigation.navigate("categories")} />
             }
@@ -108,10 +108,7 @@ export default function Vegetable({ navigation, route }) {
                 piece={item.piece}
                 onPress={() =>
                   navigation.navigate("items", {
-                    icon: item.icon,
-                    label: item.label,
-                    price: item.price,
-                    piece: item.piece,
+                    details: item,
                   })
                 }
               />
@@ -122,22 +119,3 @@ export default function Vegetable({ navigation, route }) {
     </View>
   );
 }
-
-const getTitle = (title) => {
-  switch (title) {
-    case "Vegetables":
-      return <Text>Vegetables</Text>;
-    case "Fruits":
-      return <Text>Fruits</Text>;
-    case "Bread":
-      return <Text>Bread</Text>;
-    case "Sweets":
-      return <Text>Sweets</Text>;
-    case "Pasta":
-      return <Text>Pasta</Text>;
-    case "Drink":
-      return <Text>Drink</Text>;
-    default:
-      return null;
-  }
-};

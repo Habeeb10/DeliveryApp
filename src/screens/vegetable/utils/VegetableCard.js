@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { CheckIcon } from "../../../../assets/svg";
 
-export const VegCard = ({ title, onPress, isActive, total, tit }) => {
+export const VegCard = ({ title, onPress, isActive, total }) => {
   return (
     <TouchableOpacity
       style={[styles.card, isActive && styles.container]}

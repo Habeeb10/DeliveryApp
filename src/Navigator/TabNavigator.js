@@ -4,7 +4,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Vegetable from "../screens/vegetable/Vegetable";
 import Categories from "../screens/categories/Categories";
 import Items from "../screens/item/Item";
-import Profile from "../screens/Profile";
+import Profile from "../screens/profile/Profile";
 import Checkout from "../screens/checkout/Checkout";
 import { Grid, Shoppingcart, User } from "../../assets/svg";
 import { createStackNavigator } from "@react-navigation/stack";
